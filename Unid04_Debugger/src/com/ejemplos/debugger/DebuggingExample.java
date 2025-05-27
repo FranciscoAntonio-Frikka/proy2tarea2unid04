@@ -15,7 +15,7 @@ public class DebuggingExample {
         example.printNames(names);
         
         int totalLetters = example.calculateTotalLetters(names);
-        System.out.println("Total de letras: " + totalLetters);
+        System.out.println("Total de letras: " + totalLetters); // FPM : Muestra el total de letras
 
         double averageLetters = example.calculateAverageLetters(names, totalLetters);
         System.out.println("Promedio de letras por nombre: " + averageLetters);
@@ -25,7 +25,12 @@ public class DebuggingExample {
         example.printNames(names);
     }
 
-    public void printNames(List<String> names) {
+    /**
+     * 
+     * @return Metodo que muestra de un for todos los nombres
+     */
+	
+	public void printNames(List<String> names) {
         for (String name : names) {
             System.out.println(name); // Use Step Over here
         }
